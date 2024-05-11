@@ -39,7 +39,7 @@ jobs:
           -Dsonar.token=${{ secrets.SONAR_TOKEN }} \
           -Dsonar.host.url=https://sonarcloud.io \
           -Dsonar.organization=oscargitops \
-          -Dsonar.projectKey=OscarGitOps_ms-aumento-voto
+          -Dsonar.projectKey=OscarGitOps_microservicio-java
       
       
       - name: Docker Login
@@ -53,9 +53,9 @@ jobs:
 
       - name: Docker build
         run: |
-          docker build -t oscargitops/ms-aumento-voto:latest .
+          docker build -t oscargitops/microservicio-java:latest .
 
       - name: Docker push
         run: |
-          docker push oscargitops/ms-aumento-voto:latest
+          docker push oscargitops/microservicio-java:latest
           
