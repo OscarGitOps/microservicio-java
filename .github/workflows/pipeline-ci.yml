@@ -71,15 +71,15 @@ jobs:
           docker push oscargitops/microservicio-java:latest
   
   #### se configura el runner
-  deploy:
-    needs: build
-    runs-on: self-hosted
+  #### deploy:
+  ####   needs: build
+  ####  runs-on: self-hosted
 
-    steps:
+  ####  steps:
 
-      - name: Clonacion de codigo
-        uses: actions/checkout@v4
+  ####    - name: Clonacion de codigo
+  ####      uses: actions/checkout@v4
       
-      - name: Despliegue
-        run: |
-          kubectl apply -f deploy.yaml 
+  ####    - name: Despliegue
+  ####      run: |
+  ####        kubectl apply -f deploy.yaml 
