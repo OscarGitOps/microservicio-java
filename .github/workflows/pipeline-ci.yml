@@ -70,7 +70,7 @@ jobs:
         run: |
           docker push oscargitops/microservicio-java:latest
   
-  
+  #### se configura el runner
   deploy:
     needs: build
     runs-on: self-hosted
