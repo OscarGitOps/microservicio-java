@@ -15,7 +15,7 @@ jobs:
       - name: Clonacion de codigo
         uses: actions/checkout@v4
 
-     ######### JDK para para aplicacion 
+     #### JDK para para aplicacion 
       - name: Setup Java JDK
         uses: actions/setup-java@v4.2.1
         with: 
@@ -26,7 +26,7 @@ jobs:
         run: mvn package
           
 
-      ######### JDK nuevo para sonar 
+      #### JDK nuevo para sonar 
       - name: Setup Java JDK
         uses: actions/setup-java@v4.2.1
         with: 
